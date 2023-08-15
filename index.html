@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://todomvc.com/examples/react/node_modules/todomvc-app-css/index.css">
+    <link rel="stylesheet" href="assets/css/todo.css">
+    <script src="assets/js/todo.js" defer></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <section class="todoapp">
+        <div>
+            <header class="header">
+                <h1>todos</h1>
+                <form id="todoForm">
+                    <input required class="new-todo" placeholder="What needs to be done?" value="">
+                </form>
+            </header>
+            <section class="main">
+                <input id="toggle-all" class="toggle-all" type="checkbox"><label for="toggle-all"></label>
+                <ul class="todo-list"></ul>
+            </section>
+            <footer class="footer hidden">
+                <ul class="filters">
+                    <li>
+                        <label><input type="radio" checked name="filter" value="all">All:&nbsp;<strong class="all-counter">0</strong></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="filter" value="active">Todo:&nbsp;<strong class="todo-counter">0</strong></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="filter" value="completed">Done:<strong class="done-counter">0</strong>&nbsp;</label>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <p>Created by <a href="http://github.com/petehunt/">petehunt</a></p>
+        <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+</body>
+</html>
